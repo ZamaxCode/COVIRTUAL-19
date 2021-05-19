@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/consultorio.jpg</file>
+        <file>imgs/consultorio borroso.jpeg</file>
+        <file>imgs/covicho.png</file>
+        <file>imgs/consultorio inicio.jpg</file>
+        <file>imgs/Logo.png</file>
+        <file>imgs/warning.png</file>
+        <file>imgs/cansancio.png</file>
+        <file>imgs/congestion-nasal.png</file>
+        <file>imgs/covichoFinal.png</file>
+        <file>imgs/dificultad-respirar.png</file>
+        <file>imgs/dolor.png</file>
+        <file>imgs/dolor-pecho.png</file>
+        <file>imgs/fiebre.png</file>
+        <file>imgs/malestar.png</file>
+        <file>imgs/nauseas.png</file>
+        <file>imgs/olfato-gusto.png</file>
+        <file>imgs/tos.png</file>
+        <file>imgs/Uso_del_cubrebocas17.png</file>
+        <file>imgs/cansado.png</file>
+        <file>imgs/dengue.png</file>
+        <file>imgs/enfermo.png</file>
+        <file>imgs/gripe.png</file>
+        <file>imgs/infeccion.png</file>
+        <file>imgs/influenza.png</file>
+        <file>imgs/irritacion.PNG</file>
+        <file>imgs/irritacionestomacal.png</file>
+        <file>imgs/la susana.png</file>
+        <file>imgs/mal estado.jpg</file>
+        <file>imgs/irritacionEstomacal.png</file>
+    </qresource>
+</RCC>

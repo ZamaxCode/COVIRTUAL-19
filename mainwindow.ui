@@ -1,0 +1,2265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QStackedWidget" name="CasosSW">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Disclaimer">
+       <widget class="QLabel" name="fondo">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>0</y>
+          <width>800</width>
+          <height>600</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Imagenes.qrc">:/imgs/consultorio inicio.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="warning">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>10</y>
+          <width>171</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Imagenes.qrc">:/imgs/warning.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="logo">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>430</y>
+          <width>171</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Imagenes.qrc">:/imgs/Logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="disclaimer">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>160</y>
+          <width>711</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Este programa es solamente una encuesta que toma como base los sintomas mas comunes de COVID-19, por lo cual se recomienda que si se tiene alguno de los sintomas, ya sea de COVID-19 o de otra enfermedad, acuda al medico inmediatamente. Tambien le recordamos que el COVID-19 puede presentarse de manera asintomatica.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="continuar">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>480</y>
+          <width>80</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Continuar -&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="salir">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>480</y>
+          <width>80</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;- Salir</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>540</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <zorder>pushButton</zorder>
+       <zorder>fondo</zorder>
+       <zorder>warning</zorder>
+       <zorder>logo</zorder>
+       <zorder>disclaimer</zorder>
+       <zorder>continuar</zorder>
+       <zorder>salir</zorder>
+      </widget>
+      <widget class="QWidget" name="Estados">
+       <widget class="QLabel" name="fondoConsultorio">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>800</width>
+          <height>600</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Imagenes.qrc">:/imgs/consultorio borroso.jpeg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="logo_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>211</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Imagenes.qrc">:/imgs/Logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="QN">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>751</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="q0">
+         <widget class="QLabel" name="pregunta">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgba(199, 227, 255, 100);
+font: 75 italic 24pt &quot;Corbel&quot;;</string>
+          </property>
+          <property name="text">
+           <string>¿Has seguido las normas de salubridad establecidas (evitar salir de casa, uso de cubrebocas, gel antibacterial, tomar distancia)?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/Uso_del_cubrebocas17.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ0">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="enviarQ0">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q1">
+         <widget class="QLabel" name="imagen_2">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/malestar.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>90</y>
+            <width>381</width>
+            <height>141</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Te has sentido mal ultimamente?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ1">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q2">
+         <widget class="QLabel" name="imagen_3">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/cansancio.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>381</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Te has sentido cansado o con falta de energias/fuerzas?</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ2">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q3">
+         <widget class="QLabel" name="imagen_4">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>10</y>
+            <width>301</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/nauseas.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>431</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Ha sufrido de nauseas, vomito o diarrea?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ3">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q4">
+         <widget class="QLabel" name="imagen_5">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/fiebre.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>381</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Presenta Fiebre (la temperatura debe ser mayor a 37.7º C)?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ4">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q5">
+         <widget class="QLabel" name="imagen_6">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/olfato-gusto.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>381</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Ha notado la disminucion o perdida de los sentidos del olfato o del gusto?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ5">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q6">
+         <widget class="QLabel" name="imagen_7">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/dolor.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>381</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Ha sufrido de dolores corporales, por ejemplo dolor de cabeza, dolor muscular o dolor de garganta?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ6">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q7">
+         <widget class="QLabel" name="imagen_8">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/tos.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_8">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>381</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Has sufrido de tos ultimamente?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ7">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q8">
+         <widget class="QLabel" name="imagen_9">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/congestion-nasal.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_9">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>381</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Presenta congestion nasal?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ8">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q9">
+         <widget class="QLabel" name="imagen_10">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/dificultad-respirar.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>381</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Tiene problemas o dificultad para respirar sintiendo que le falta el aire?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ9">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q10">
+         <widget class="QLabel" name="imagen_11">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/dolor-pecho.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>381</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgba(199, 227, 255, 100);
+font: 75 italic 24pt &quot;Corbel&quot;;</string>
+          </property>
+          <property name="text">
+           <string>¿Ha tenido dolores constantes en el pecho?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ10">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="respuestaQ10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q11">
+         <widget class="QLabel" name="imagen_12">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/covichoFinal.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Es muy probable que usted presente COVID-19, le recomendamos que asista con un medico o que se realice una prueba para estar seguros.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ11">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="salirQ11">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q12">
+         <widget class="QComboBox" name="respuestaQ12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>81</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>SI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="imagen_13">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>0</y>
+            <width>421</width>
+            <height>361</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/enfermo.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enviarQ12">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>330</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Enviar</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_13">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>381</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>¿Usted ha tenido contacto o ha estado cerca de personas las cuales padecen de COVID-19?</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q13">
+         <widget class="QLabel" name="imagen_14">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>-10</y>
+            <width>311</width>
+            <height>311</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/la susana.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_14">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Es muy probable que usted este libre de la enfermedad COVID-19. Gracias por usar COVirtual-19, aun asi le recomendamos que visite a un medico si llega a presentar algun problema.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ13">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="salirQ13">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q14">
+         <widget class="QLabel" name="imagen_15">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>10</y>
+            <width>281</width>
+            <height>271</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/irritacion.PNG</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_15">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>381</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Le informamos que usted unicamente sufre de una irritacion generada por estres o malestar emocional.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ14">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="salirQ14">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q15">
+         <widget class="QPushButton" name="regresarQ15">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="salirQ15">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Posiblemente usted se sufra de agotamiento o de deshidratacion. Tome sus precauciones y medidas para no empeorar su estado de salud.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_16">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>10</y>
+            <width>281</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/cansado.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q16">
+         <widget class="QPushButton" name="salirQ16">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Muy probablemente ingirio algun alimento en mal estado y como consecuencia usted presenta vomitos o diarrea. Esto tambien podria llegar a ser una acidez estomacal.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ16">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_17">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>20</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/mal estado.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q17">
+         <widget class="QPushButton" name="salirQ17">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>381</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Debido a los sintomas que usted presenta puede que usted sufra de infeccion estomacal.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ17">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_18">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>-10</y>
+            <width>361</width>
+            <height>321</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/irritacionestomacal.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q18">
+         <widget class="QPushButton" name="salirQ18">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_19">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Es posible que usted este sufriendo de una terrible infeccion. Acuda a su medico de cabecera para que este le brinde mas informacion y algun tratamiento.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ18">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_19">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>20</y>
+            <width>291</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/infeccion.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q19">
+         <widget class="QPushButton" name="salirQ19">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_20">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Lamentamos informarle que su problema es grave debido a que le pico un mosquito maligno, por lo tanto usted presenta sintomas de dengue.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ19">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_20">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>20</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/dengue.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q20">
+         <widget class="QPushButton" name="salirQ20">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_21">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Usted presenta sintomas de una gripe aguda, le recomendamos asistir con su medico de cabecera para que este le de tratamiento.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ20">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_21">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>20</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/gripe.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="q21">
+         <widget class="QPushButton" name="salirQ21">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>320</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="pregunta_22">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>381</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Corbel</family>
+            <pointsize>24</pointsize>
+            <weight>9</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 75 italic 24pt &quot;Corbel&quot;;
+background-color: rgba(199, 227, 255, 100);</string>
+          </property>
+          <property name="text">
+           <string>Lamentamos informarle que usted esta presentando sintomas de influenza, por lo que es indispensable que asista con su medico de cabecera para que este le de tratamiento.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="regresarQ21">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>320</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Regresar al Inicio</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imagen_22">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>20</y>
+            <width>311</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Imagenes.qrc">:/imgs/influenza.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
